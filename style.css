@@ -93,6 +93,32 @@ body {
   line-height: 104px;
 }
 
+.triangle {
+  height: 0;
+  width: 0;
+  border: 70px solid transparent;
+  border-bottom: 0;
+  border-top: 115px solid blue;
+  position: absolute;
+  text-align: center;
+  margin: 30%;
+  transform: translateX(68px) translateY(-60px) skewX(15deg) skewY(2deg);
+  position: absolute;
+  top: 30px;
+  left: -15px;
+  display: ;
+}
+
+.triangle .answer {
+  height: 50px;
+  width: 50px;
+  color: white;
+  /* transform: translateX(68px) translateY(-60px) skewX(15deg) skewY(2deg); */
+  position: absolute;
+  top: -110px;
+  left: -25px;
+}
+
 @keyframes shakeBall {
   0% {
     transform: translateX(0%);
