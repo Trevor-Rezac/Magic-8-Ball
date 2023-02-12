@@ -109,7 +109,7 @@ body {
   top: 30px;
   left: -15px;
   opacity: 0;
-  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 .triangle .answer {
@@ -119,6 +119,10 @@ body {
   position: absolute;
   top: -110px;
   left: -25px;
+}
+
+.reveal {
+  animation: revealAnswer ;
 }
 
 @keyframes shakeBall {
@@ -147,7 +151,6 @@ body {
 
 @keyframes revealAnswer {
   0% {
-    transform: ;
     opacity: 0;
   }
   50% {

@@ -1,4 +1,4 @@
-import { shake8Ball, revealAnswer } from "./utils.js";
+import { shake8Ball, revealAnswer, resetBall } from "./utils.js";
 
 const eightBall = document.querySelector(".ball");
 
@@ -22,6 +22,10 @@ function doMagic(e) {
     revealAnswer(e);
   }
 
-  console.log("eightBall", eightBall);
   isPaused = false;
+
+  //reset the ball after animations are done
+  setTimeout(function () {
+    resetBall();
+  }, 8000);
 }
